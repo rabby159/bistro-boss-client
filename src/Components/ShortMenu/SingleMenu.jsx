@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const SingleMenu = ({item}) => {
     const {name, recipe, image, price} = item;
@@ -13,5 +13,9 @@ const SingleMenu = ({item}) => {
         </div>
     );
 };
+
+SingleMenu.propTypes ={
+    item: PropTypes.node
+}
 
 export default SingleMenu;
